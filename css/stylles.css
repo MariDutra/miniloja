@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    display: block;
+    background-color: rgb(17, 16, 14);
+    
+
+}
+/*navbar/inicio*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: #000;
+
+}
+
+.logo a{
+    color: rgb(11, 170, 101);
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 30px;
+    
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    
+}
+.menu li a{
+    color: rgb(235, 225, 220);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    list-style: none;
+}
+
+.menu li a:hover{
+    color:  rgb(11, 210, 194);
+}
+
+.logo{
+    text-transform: capitalize;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.banner {
+    text-align: center;
+    display: block;
+    margin-top: 4%;
+    
+  }
+
+  .sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text-3{
+    font-size: 40px;
+    margin: 5px;
+    margin-top: 5%;
+    margin-left: 35%;
+    color: aquamarine;
+    
+}
+
+form {
+    width: 100%;
+    max-width: 30rem;
+  }
+  
+  label,
+  input,
+  textarea,
+  button {
+    display: block;
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    color: white;
+    background: #323644;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.3125rem #26344a;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    color: #84868f;
+  }
+  
+  textarea {
+    min-height: 12.5rem;
+    resize: vertical;
+  }
+  
+  button {
+    border: none;
+    border-radius: 99px;
+    color: white;
+    background: #1d90f5;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover,
+  button:focus {
+    outline: none;
+    background: #1c70d3;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+  }
+  
+  .success,
+  .error {
+    text-align: center;
+  }
+  
+  .success {
+    color: greenyellow;
+  }
+  
+  .error {
+    color: tomato;
+  }
