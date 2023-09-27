@@ -178,3 +178,8 @@ form {
   .error {
     color: tomato;
   }
+  @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}

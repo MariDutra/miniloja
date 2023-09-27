@@ -137,3 +137,14 @@ form {
   .error {
     color: tomato;
   }
+  @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+  /* Estilos para telas menores, como dispositivos móveis */
+  input[type="text"], input[type="email"] {
+      width: 100%;
+  }
+}
