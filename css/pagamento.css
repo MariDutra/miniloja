@@ -14,7 +14,7 @@ body{
 }
 /*navbar/inicio*/
 .navbar{
-  position: fixed;
+  
   width: 100%;
   
 }
@@ -143,14 +143,24 @@ form {
   .error {
     color: tomato;
   }
-  @media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
+ 
+
+/* Adicione uma media query para telas menores */
 @media (max-width: 768px) {
-  /* Estilos para telas menores, como dispositivos móveis */
-  input[type="text"], input[type="email"] {
-      width: 100%;
+  /* Estilos específicos para telas menores */
+  h1 {
+      margin-left: 10%; /* Ajuste a margem esquerda para telas menores */
+      font-size: 24px; /* Tamanho de fonte menor para telas menores, se necessário */
   }
+
+  p {
+      margin-left: 10%; /* Ajuste a margem esquerda para telas menores */
+      font-size: 16px; /* Tamanho de fonte menor para telas menores, se necessário */
+  }
+
+  form {
+      margin-left: 10%; /* Ajuste a margem esquerda para telas menores */
+  }
+
+  /* Adicione mais estilos específicos para telas menores conforme necessário */
 }

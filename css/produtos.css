@@ -26,7 +26,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-   
+    background: #000;
 
 }
 
@@ -103,90 +103,49 @@ p{
   font-family: 'Ubuntu', sans-serif;
   color: antiquewhite;
 }
-form {
-    width: 100%;
-    max-width: 30rem;
-  }
-  
-  label,
-  input,
-  textarea,
-  button {
-    display: block;
-  }
-  
-  input,
-  textarea,
-  button {
-    width: 100%;
-    font: inherit;
-    padding: 1.25rem;
-    font-weight: 700;
-  }
-  
-  input,
-  textarea {
-    margin-bottom: 1rem;
-    color: white;
-    background: #323644;
-    border: 0.125rem solid transparent;
-    border-radius: 1.125rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  
-  input:hover,
-  input:focus,
-  textarea:hover,
-  textarea:focus {
-    outline: none;
-    border-color: #1d90f5;
-    box-shadow: 0 0 0 0.3125rem #26344a;
-  }
-  
-  label {
-    margin-bottom: 0.5rem;
-    color: #84868f;
-  }
-  
-  textarea {
-    min-height: 12.5rem;
-    resize: vertical;
-  }
-  
-  button {
-    border: none;
-    border-radius: 99px;
-    color: white;
-    background: #1d90f5;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  button:hover,
-  button:focus {
-    outline: none;
-    background: #1c70d3;
-  }
-  
-  button:disabled {
-    cursor: not-allowed;
-    background: #555b69;
-  }
-  
-  .success,
-  .error {
-    text-align: center;
-  }
-  
-  .success {
-    color: greenyellow;
-  }
-  
-  .error {
-    color: tomato;
-  }
-  @media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
+
+button {
+  border-radius: 111px;
+  background-color: #13b53e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 155px;
+  cursor: pointer;
+  margin: 5px;
 }
+
+button:hover {
+  background-color: #a07a2f; /* Green */
+  color: rgb(193, 27, 27);
+}
+ /* Adicione a seguinte regra para tornar a fonte responsiva */
+
+
+/* Em ./css/produtos.css */
+
+/* Estilos gerais para telas maiores */
+/* ... */
+
+/* Adicione uma media query para telas menores */
+@media (max-width: 768px) {
+  /* Estilos específicos para telas menores */
+  body {
+      font-size: 14px; /* Tamanho de fonte menor para telas menores, se necessário */
+  }
+
+  .Titulo {
+      margin-left: 10%; /* Ajuste a margem esquerda para telas menores */
+  }
+
+  .produtos {
+      flex-wrap: wrap; /* Faça os itens do grid quebrarem para a próxima linha */
+      justify-content: center; /* Centralize os itens */
+  }
+
+ 
+  
+}
+

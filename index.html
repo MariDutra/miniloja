@@ -6,6 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drinks!</title>
     <link rel="stylesheet" href="./css/stylles.css">
+    <style>
+        /* CSS aqui para tornar o site responsivo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .navbar {
+            background-color: rgb(4, 12, 12);
+            padding: 10px;
+            text-align: center;
+            min-height: 10vh;
+            
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .sobre {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            flex-basis: calc(33.33% - 20px);
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #444;
+            text-align: center;
+        }
+
+        .card2 {
+            flex-basis: calc(33.33% - 20px);
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #444;
+            text-align: center;
+        }
+
+        .about {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .contato {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label,
+        form input,
+        form textarea,
+        form button {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,72 +106,52 @@
         <nav>
             <div class="logo">
                 <h2>
-                    <a href="#">Drink<span style="color: aqua;">Express</span></a>
+                    <a href="#" style="color: rgb(36, 130, 99);">Drink<span style="color: aqua;">Express</span></a>
                 </h2>
-
             </div>
-
             <ul class="menu">
                 <li><a href="#">Início</a></li>
                 <li><a href="./produtos.html">Produtos</a></li>
                 <li><a href="#contacto">Contato</a></li>
             </ul>
         </nav>
-
     </header>
-    <section class="banner">
-        <img src="./img/captela.png" alt="Bebidas Especiais"
-            style="width: 100%; height: 400px; align-items: auto; ">
-    </section>
-    <div class="sobre" >
-        <div class="wrapper">
-            <div class="text-3">Bebidas <span class="typing"></span></div>
-            <div class="max-width" style="display: flex; margin-top: 4%;">
 
-                <div class="card"><ion-icon name="bag-handle" style="color: darkgoldenrod; font-size: 50px; margin-left: 50%;"></ion-icon>
-                    <p class="about"
-                        style="color: aliceblue; margin-left: 10%; margin-top: 3%; align-items: center; justify-content: space-around;
-                     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px;">
-                        Você pode escolher entre cervejas, vinhos,<br> água, energéticos, refrigerantes, salgadinhos e até
-                        gelo!
+    <section class="banner">
+        <img src="./img/captela.png" alt="Bebidas Especiais">
+    </section>
+
+    <div class="sobre">
+        <div class="wrapper">
+            <div class="text-3" style="margin-top: 2px;">Bebidas <span class="typing"></span></div>
+            <div class="max-width" style="margin-top: 40px;">
+                <div class="card"><ion-icon name="bag-handle" style="color: darkgoldenrod; font-size: 50px;"></ion-icon>
+                    <p class="about">
+                        Você pode escolher entre cervejas, vinhos, água, energéticos, refrigerantes, salgadinhos e até gelo!
                     </p>
                 </div>
 
-                <div class="card2"><ion-icon name="logo-wechat" style="color: darkgoldenrod; font-size: 50px; margin-left: 50%;"></ion-icon>
-                    <p class="about"
-                        style="color: aliceblue; margin-left: 10%; margin-top: 3%; align-items: center; justify-content: space-around;
-                     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px;">
+                <div class="card2"><ion-icon name="logo-wechat" style="color: darkgoldenrod; font-size: 50px;"></ion-icon>
+                    <p class="about">
                         Achamos as bebidas geladinhas na sua área e levamos até você!
                     </p>
                 </div>
 
-                <div class="card2"><ion-icon name="beer-outline" style="color: darkgoldenrod; font-size: 50px; margin-left: 50%;
-                    "></ion-icon>
-                    <p class="about"
-                        style="color: aliceblue; margin-left: 10%; margin-top: 3%; align-items: center; justify-content: space-around;
-                     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px;">
+                <div class="card2"><ion-icon name="beer-outline" style="color: darkgoldenrod; font-size: 50px;"></ion-icon>
+                    <p class="about">
                         Suas bebidas chegam geladinhas e super rápidas, prontas para brindar!
                     </p>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <br>
-    <br>
+    <h2 style="text-align: center; margin-top: 4%; color: aqua; min-height: 10vh;">Entre em Contato</h2>
 
-    <br>
-    <br>
-    <h2 style="margin-left: 45%; margin-top: 10%; color: aqua;">Entre em Contato</h2>
     <section class="contato" id="contacto">
-        
-        <p style="display: flex; margin-top: 30px; margin-left: 100px; color: aliceblue;">Se tiver
-            alguma dúvida ou desejar fazer um pedido personalizado, entre em contato
-            conosco.
-        </p>
-        <form style="margin-left: 0px; margin-top: 5%;" action="https://formsubmit.co/ajax/maria.dutra2305@gmail.com"
-            method="POST" data-form>
+        <p style="color: white; font-size: 20px;">Se tiver alguma dúvida ou desejar fazer um pedido personalizado,
+            entre em contato conosco.</p>
+        <form action="https://formsubmit.co/ajax/maria.dutra2305@gmail.com" method="POST" data-form>
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" required />
             <label for="email">E-mail</label>
@@ -87,24 +160,26 @@
             <textarea name="mensagem" id="mensagem" required></textarea>
             <button type="submit" data-button>Enviar</button>
         </form>
-        <a href="mailto:contato@minilojadebebidas.com"
-            style="color: aliceblue; margin-left: 40px;">juvrio@gmail.com</a>
+        <a href="mailto:contato@minilojadebebidas.com" style="color: white;">juvrio@gmail.com</a>
     </section>
 
-    <footer style="margin-left: 7%;">
+    <footer>
         <p>&copy; 2023 DrinkExpress</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./script/lojinha.js"></script>
     <script src="./script/scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </body>
 
 </html>
