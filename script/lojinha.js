@@ -21,5 +21,21 @@ $(document).ready(function(){
          backSpeed:60,
          loop:true
      });
+
+    // Pergunta a idade ao usuário
+var idade = prompt("Quantos anos você tem?");
+
+// Converte a entrada para um número
+idade = parseInt(idade);
+
+// Verifica se a idade é 18 anos ou mais
+if (idade >= 18) {
+    alert("Seja bem-vindo!");
+} else {
+    // Redireciona para o site da Ambev
+    window.location.href = "https://www.ambev.com.br/consumo-responsavel-aviso";
+}
+
+
      
 })    
